@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<nodes>
+    <!-- West -->
+    <node id="J0" x="0" y="0"/>
+
+    <!-- Center -->
+    <node id="J1" x="100" y="0"/>
+
+    <!-- East -->
+    <node id="J2" x="200" y="0"/>
+
+    <!-- North -->
+    <node id="J3" x="100" y="100"/>
+
+    <!-- South -->
+    <node id="J4" x="100" y="-100"/>
+</nodes>

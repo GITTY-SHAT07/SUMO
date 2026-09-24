@@ -1,0 +1,181 @@
+<routes>
+
+    <!-- =====================================================
+         VEHICLE TYPES
+         ===================================================== -->
+
+    <!-- Autonomous / ego vehicle -->
+    <vType
+        id="ego"
+        accel="2.6"
+        decel="4.5"
+        sigma="0.5"
+        length="5"
+        minGap="2.5"
+        maxSpeed="13.89"
+    />
+
+    <!-- Background traffic vehicles -->
+    <vType
+        id="traffic"
+        accel="2.0"
+        decel="4.5"
+        sigma="0.5"
+        length="5"
+        minGap="2.5"
+        maxSpeed="13.89"
+    />
+
+
+    <!-- =====================================================
+         ROUTES
+         ===================================================== -->
+
+    <!-- Ego vehicle: J0 -> J1 -> J2 -->
+    <route
+        id="ego_route"
+        edges="E0 E2"
+    />
+
+    <!-- Traffic on the direct route: J0 -> J1 -> J2 -->
+    <route
+        id="traffic_horizontal"
+        edges="E0 E2"
+    />
+
+    <!-- Traffic on the upper route: J0 -> J1 -> J3 -> J2 -->
+    <route
+        id="traffic_upper"
+        edges="E0 E4 E6"
+    />
+
+    <!-- Traffic on the lower route: J0 -> J1 -> J4 -> J2 -->
+    <route
+        id="traffic_lower"
+        edges="E0 E8 E10"
+    />
+
+
+    <!-- =====================================================
+         BACKGROUND TRAFFIC
+         ===================================================== -->
+
+    <!-- 1 second -->
+    <vehicle id="traffic1"
+             type="traffic"
+             route="traffic_horizontal"
+             depart="1"/>
+
+    <vehicle id="traffic2"
+             type="traffic"
+             route="traffic_horizontal"
+             depart="1.5"/>
+
+
+    <!-- 2 seconds -->
+    <vehicle id="traffic3"
+             type="traffic"
+             route="traffic_upper"
+             depart="2"/>
+
+    <vehicle id="traffic4"
+             type="traffic"
+             route="traffic_horizontal"
+             depart="2.5"/>
+
+
+    <!-- 3 seconds -->
+    <vehicle id="traffic5"
+             type="traffic"
+             route="traffic_horizontal"
+             depart="3"/>
+
+    <vehicle id="traffic6"
+             type="traffic"
+             route="traffic_lower"
+             depart="3.5"/>
+
+
+    <!-- 4 seconds -->
+    <vehicle id="traffic7"
+             type="traffic"
+             route="traffic_horizontal"
+             depart="4"/>
+
+    <vehicle id="traffic8"
+             type="traffic"
+             route="traffic_upper"
+             depart="4.5"/>
+
+
+    <!-- 5 seconds -->
+    <vehicle id="traffic9"
+             type="traffic"
+             route="traffic_horizontal"
+             depart="5"/>
+
+    <vehicle id="traffic10"
+             type="traffic"
+             route="traffic_lower"
+             depart="5.5"/>
+
+
+    <!-- 6 seconds -->
+    <vehicle id="traffic11"
+             type="traffic"
+             route="traffic_horizontal"
+             depart="6"/>
+
+    <vehicle id="traffic12"
+             type="traffic"
+             route="traffic_upper"
+             depart="6.5"/>
+
+
+    <!-- 7 seconds -->
+    <vehicle id="traffic13"
+             type="traffic"
+             route="traffic_horizontal"
+             depart="7"/>
+
+    <vehicle id="traffic14"
+             type="traffic"
+             route="traffic_lower"
+             depart="7.5"/>
+
+
+    <!-- 8 seconds -->
+    <vehicle id="traffic15"
+             type="traffic"
+             route="traffic_horizontal"
+             depart="8"/>
+
+    <vehicle id="traffic16"
+             type="traffic"
+             route="traffic_upper"
+             depart="8.5"/>
+
+
+    <!-- 9 seconds -->
+    <vehicle id="traffic17"
+             type="traffic"
+             route="traffic_horizontal"
+             depart="9"/>
+
+    <vehicle id="traffic18"
+             type="traffic"
+             route="traffic_lower"
+             depart="9.5"/>
+
+
+    <!-- =====================================================
+         EGO VEHICLE
+         ===================================================== -->
+
+    <!-- Ego starts after background traffic has developed -->
+    <vehicle id="egoVehicle"
+             type="ego"
+             route="ego_route"
+             depart="10"/>
+
+</routes>

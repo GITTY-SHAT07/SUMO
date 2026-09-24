@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<edges>
+
+    <!-- Direct horizontal route -->
+    <edge id="E0" from="J0" to="J1" numLanes="1" speed="13.89"/>
+    <edge id="E1" from="J1" to="J0" numLanes="1" speed="13.89"/>
+
+    <edge id="E2" from="J1" to="J2" numLanes="1" speed="13.89"/>
+    <edge id="E3" from="J2" to="J1" numLanes="1" speed="13.89"/>
+
+
+    <!-- Upper alternative route -->
+    <edge id="E4" from="J1" to="J3" numLanes="1" speed="13.89"/>
+    <edge id="E5" from="J3" to="J1" numLanes="1" speed="13.89"/>
+
+    <edge id="E6" from="J3" to="J2" numLanes="1" speed="13.89"/>
+    <edge id="E7" from="J2" to="J3" numLanes="1" speed="13.89"/>
+
+
+    <!-- Lower alternative route -->
+    <edge id="E8" from="J1" to="J4" numLanes="1" speed="13.89"/>
+    <edge id="E9" from="J4" to="J1" numLanes="1" speed="13.89"/>
+
+    <edge id="E10" from="J4" to="J2" numLanes="1" speed="13.89"/>
+    <edge id="E11" from="J2" to="J4" numLanes="1" speed="13.89"/>
+
+</edges>

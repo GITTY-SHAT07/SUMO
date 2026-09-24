@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2026-08-28T15:32:09.249988+05:30 by Eclipse SUMO netconvert 1.27.1
+<netconvertConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/netconvertConfiguration.xsd">
+
+    <input>
+        <node-files value="nodes.nod.xml"/>
+        <edge-files value="edges.edg.xml"/>
+    </input>
+
+    <output>
+        <output-file value="network.net.xml"/>
+        <plain-output-prefix value="generated"/>
+    </output>
+
+</netconvertConfiguration>
+-->
+
+<edges version="1.20" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/edges_file.xsd">
+    <edge id="E0" from="J0" to="J1" priority="-1" numLanes="1" speed="13.89"/>
+    <edge id="E1" from="J1" to="J0" priority="-1" numLanes="1" speed="13.89"/>
+    <edge id="E2" from="J1" to="J2" priority="-1" numLanes="1" speed="13.89"/>
+    <edge id="E3" from="J2" to="J1" priority="-1" numLanes="1" speed="13.89"/>
+    <edge id="E4" from="J3" to="J1" priority="-1" numLanes="1" speed="13.89"/>
+    <edge id="E5" from="J1" to="J3" priority="-1" numLanes="1" speed="13.89"/>
+    <edge id="E6" from="J4" to="J1" priority="-1" numLanes="1" speed="13.89"/>
+    <edge id="E7" from="J1" to="J4" priority="-1" numLanes="1" speed="13.89"/>
+</edges>
