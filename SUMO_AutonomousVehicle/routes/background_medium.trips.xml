@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2026-10-31 18:38:48.908072 by Eclipse SUMO randomTrips.py v1.27.1
+<configuration>
+    <net-file value="map.net.xml"/>
+    <output-trip-file value="routes/background_medium.trips.xml"/>
+    <route-file value="routes/background_traffic_medium.rou.xml"/>
+    <prefix value="bgm_"/>
+    <trip-attributes value="departLane=&quot;best&quot; departSpeed=&quot;max&quot; departPos=&quot;random&quot;"/>
+    <vehicle-class value="passenger"/>
+    <seed value="2026"/>
+    <min-distance value="400.0"/>
+    <end value="140.0"/>
+    <period value="1.0"/>
+</configuration>
+-->
+
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
+    <vType id="bgm__passenger" vClass="passenger"/>
+    <trip id="bgm_0" depart="0.00" from="-1500153419" to="1416241810#7" departLane="best" departSpeed="max" departPos="random" type="bgm__passenger"/>
+    <trip id="bgm_1" depart="1.00" from="1513939047" to="1500153420#1" departLane="best" departSpeed="max" departPos="random" type="bgm__passenger"/>
+    <trip id="bgm_2" depart="2.00" from="-212983375" to="1500153425#2" departLane="best" departSpeed="max" departPos="random" type="bgm__passenger"/>
+    <trip id="bgm_3" depart="3.00" from="1084319634" to="784746961#1" departLane="best" departSpeed="max" departPos="random" type="bgm__passenger"/>
+    <trip id="bgm_4" depart="4.00" from="922334237#0" to="915298554#0" departLane="best" departSpeed="max" departPos="random" type="bgm__passenger"/>
+    <trip id="bgm_5" depart="5.00" from="-915298558#0" to="1457059971#3" departLane="best" departSpeed="max" departPos="random" type="bgm__passenger"/>
+    <trip id="bgm_6" depart="6.00" from="1416241812#1" to="-107533638#4" departLane="best" departSpeed="max" departPos="random" type="bgm__passenger"/>
+    <trip id="bgm_7" depart="7.00" from="1457059970#0" to="1416241810#6" departLane="best" departSpeed="max" departPos="random" type="bgm__passenger"/>
+    <trip id="bgm_8" depart="8.00" from="-1457059972" to="1416241810#8" departLane="best" departSpeed="max" departPos="random" type="bgm__passenger"/>
+    <trip id="bgm_9" depart="9.00" from="1513939047" to="1500153422#1" departLane="best" departSpeed="max" departPos="random" type="bgm__passenger"/>
+    <trip id="bgm_10" depart="10.00" from="1190758209" to="915298552#1" departLane="best" departSpeed="max" departPos="random" type="bgm__passenger"/>
+    <trip id="bgm_11" depart="11.00" from="-784746944#3" to="1189785315" departLane="best" departSpeed="max" departPos="random" type="bgm__passenger"/>
+    <trip id="bgm_12" depart="12.00" from="1192358343" to="-107533638#5" departLane="best" departSpeed="max" departPos="random" type="bgm__passenger"/>
+    <trip id="bgm_13" depart="13.00" from="-1513939046#2" to="-1512571495" departLane="best" departSpeed="max" departPos="random" type="bgm__passenger"/>
+    <trip id="bgm_14" depart="14.00" from="-1084319633" to="1513939044" departLane="best" departSpeed="max" departPos="random" type="bgm__passenger"/>
+    <trip id="bgm_15" depart="15.00" from="1460459673" to="1347435129" departLane="best" departSpeed="max" departPos="random" type="bgm__passenger"/>
+    <trip id="bgm_16" depart="16.00" from="1189785314#2" to="-785016220" departLane="best" departSpeed="max" departPos="random" type="bgm__passenger"/>
+    <trip id="bgm_17" depart="17.00" from="915117347#0" to="1512571496#0" departLane="best" departSpeed="max" departPos="random" type="bgm__passenger"/>
+    <trip id="bgm_18" depart="18.00" from="1120483008#0" to="1347435129" departLane="best" departSpeed="max" departPos="random" type="bgm__passenger"/>
+    <trip id="bgm_19" depart="19.00" from="1189785314#1" to="915117347#3" departLane="best" departSpeed="max" departPos="random" type="bgm__passenger"/>
+    <trip id="bgm_20" depart="20.00" from="1084319629#4" to="-922334237#1" departLane="best" departSpeed="max" departPos="random" type="bgm__passenger"/>
+    <trip id="bgm_21" depart="21.00" from="-784746946" to="-107533638#6" departLane="best" departSpeed="max" departPos="random" type="bgm__passenger"/>
+    <trip id="bgm_22" depart="22.00" from="1190758209" to="915298552#2" departLane="best" departSpeed="max" departPos="random" type="bgm__passenger"/>
+    <trip id="bgm_23" depart="23.00" from="-784746944#3" to="1416241810#3" departLane="best" departSpeed="max" departPos="random" type="bgm__passenger"/>
+    <trip id="bgm_24" depart="24.00" from="784746944#2" to="1457059971#3" departLane="best" departSpeed="max" departPos="random" type="bgm__passenger"/>
+    <trip id="bgm_25" depart="25.00" from="915117347#5" to="784746962#0" departLane="best" departSpeed="max" departPos="random" type="bgm__passenger"/>
+    <trip id="bgm_26" depart="26.00" from="-1191739522" to="1512946148#0" departLane="best" departSpeed="max" departPos="random" type="bgm__passenger"/>
+    <trip id="bgm_27" depart="27.00" from="915320989#1" to="784746973" departLane="best" departSpeed="max" departPos="random" type="bgm__passenger"/>
+    <trip id="bgm_28" depart="28.00" from="-784746944#4" to="1416241810#6" departLane="best" departSpeed="max" departPos="random" type="bgm__passenger"/>
+    <trip id="bgm_29" depart="29.00" from="-1191739522" to="1548790740" departLane="best" departSpeed="max" departPos="random" type="bgm__passenger"/>
+    <trip id="bgm_30" depart="30.00" from="-107533638#3" to="-1058506908" departLane="best" departSpeed="max" departPos="random" type="bgm__passenger"/>
+    <trip id="bgm_31" depart="31.00" from="-1189785314#1" to="784746944#2" departLane="best" departSpeed="max" departPos="random" type="bgm__passenger"/>
+    <trip id="bgm_32" depart="32.00" from="-1512918616#0" to="107533638#2" departLane="best" departSpeed="max" departPos="random" type="bgm__passenger"/>
+    <trip id="bgm_33" depart="33.00" from="915298554#3" to="1416241810#5" departLane="best" departSpeed="max" departPos="random" type="bgm__passenger"/>
+    <trip id="bgm_34" depart="34.00" from="-1513939046#2" to="1500153421#0" departLane="best" departSpeed="max" departPos="random" type="bgm__passenger"/>
+    <trip id="bgm_35" depart="35.00" from="915298558#0" to="915117347#1" departLane="best" departSpeed="max" departPos="random" type="bgm__passenger"/>
+    <trip id="bgm_36" depart="36.00" from="1192358342#0" to="-1189785314#1" departLane="best" departSpeed="max" departPos="random" type="bgm__passenger"/>
+    <trip id="bgm_37" depart="37.00" from="784746944#2" to="1416241812#0" departLane="best" departSpeed="max" departPos="random" type="bgm__passenger"/>
+    <trip id="bgm_38" depart="38.00" from="-1512918622" to="-107533638#2" departLane="best" departSpeed="max" departPos="random" type="bgm__passenger"/>
+    <trip id="bgm_39" depart="39.00" from="-1192358343" to="915117347#4" departLane="best" departSpeed="max" departPos="random" type="bgm__passenger"/>
+    <trip id="bgm_40" depart="40.00" from="-1084319634" to="1079919822" departLane="best" departSpeed="max" departPos="random" type="bgm__passenger"/>
+    <trip id="bgm_41" depart="41.00" from="-107533638#6" to="1416241810#9" departLane="best" departSpeed="max" departPos="random" type="bgm__passenger"/>
+    <trip id="bgm_42" depart="42.00" from="-915298554#3" to="-1500153423" departLane="best" departSpeed="max" departPos="random" type="bgm__passenger"/>
+    <trip id="bgm_43" depart="43.00" from="1192358343" to="1190758210#2" departLane="best" departSpeed="max" departPos="random" type="bgm__passenger"/>
+    <trip id="bgm_44" depart="44.00" from="-915298557" to="1500153422#0" departLane="best" departSpeed="max" departPos="random" type="bgm__passenger"/>
+    <trip id="bgm_45" depart="45.00" from="107533638#7" to="-212983375" departLane="best" departSpeed="max" departPos="random" type="bgm__passenger"/>
+    <trip id="bgm_46" depart="46.00" from="1084319635" to="212983375" departLane="best" departSpeed="max" departPos="random" type="bgm__passenger"/>
+    <trip id="bgm_47" depart="47.00" from="1192358343" to="915298558#0" departLane="best" departSpeed="max" departPos="random" type="bgm__passenger"/>
+    <trip id="bgm_48" depart="48.00" from="-1512918616#1" to="784746973" departLane="best" departSpeed="max" departPos="random" type="bgm__passenger"/>
+    <trip id="bgm_49" depart="49.00" from="107533638#5" to="1190758210#0" departLane="best" departSpeed="max" departPos="random" type="bgm__passenger"/>
+    <trip id="bgm_50" depart="50.00" from="1084319629#0" to="-1153978413" departLane="best" departSpeed="max" departPos="random" type="bgm__passenger"/>
+    <trip id="bgm_51" depart="51.00" from="-784746944#4" to="1416241810#6" departLane="best" departSpeed="max" departPos="random" type="bgm__passenger"/>
+    <trip id="bgm_52" depart="52.00" from="1153978413" to="107533638#5" departLane="best" departSpeed="max" departPos="random" type="bgm__passenger"/>
+    <trip id="bgm_53" depart="53.00" from="784746944#4" to="785016220" departLane="best" departSpeed="max" departPos="random" type="bgm__passenger"/>
+    <trip id="bgm_54" depart="54.00" from="-1548790740" to="915298557" departLane="best" departSpeed="max" departPos="random" type="bgm__passenger"/>
+    <trip id="bgm_55" depart="55.00" from="-1329296819" to="1513939045#1" departLane="best" departSpeed="max" departPos="random" type="bgm__passenger"/>
+    <trip id="bgm_56" depart="56.00" from="1416241810#7" to="1457059972" departLane="best" departSpeed="max" departPos="random" type="bgm__passenger"/>
+    <trip id="bgm_57" depart="57.00" from="-1513939046#0" to="-922334237#1" departLane="best" departSpeed="max" departPos="random" type="bgm__passenger"/>
+    <trip id="bgm_58" depart="58.00" from="-784746946" to="1457059971#3" departLane="best" departSpeed="max" departPos="random" type="bgm__passenger"/>
+    <trip id="bgm_59" depart="59.00" from="1512918618#0" to="212983429" departLane="best" departSpeed="max" departPos="random" type="bgm__passenger"/>
+    <trip id="bgm_60" depart="60.00" from="1500153421#0" to="1416241810#8" departLane="best" departSpeed="max" departPos="random" type="bgm__passenger"/>
+    <trip id="bgm_61" depart="61.00" from="-785016220" to="784746962#1" departLane="best" departSpeed="max" departPos="random" type="bgm__passenger"/>
+    <trip id="bgm_62" depart="62.00" from="-915117370#0" to="107533638#2" departLane="best" departSpeed="max" departPos="random" type="bgm__passenger"/>
+    <trip id="bgm_63" depart="63.00" from="-784746944#3" to="-1120483008#0" departLane="best" departSpeed="max" departPos="random" type="bgm__passenger"/>
+    <trip id="bgm_64" depart="64.00" from="1079919822" to="915117347#6" departLane="best" departSpeed="max" departPos="random" type="bgm__passenger"/>
+    <trip id="bgm_65" depart="65.00" from="-107533638#3" to="-1190758209" departLane="best" departSpeed="max" departPos="random" type="bgm__passenger"/>
+    <trip id="bgm_66" depart="66.00" from="915298554#0" to="1084319629#1" departLane="best" departSpeed="max" departPos="random" type="bgm__passenger"/>
+    <trip id="bgm_67" depart="67.00" from="915298552#0" to="107533638#2" departLane="best" departSpeed="max" departPos="random" type="bgm__passenger"/>
+    <trip id="bgm_68" depart="68.00" from="-1513939046#0" to="1329296819" departLane="best" departSpeed="max" departPos="random" type="bgm__passenger"/>
+    <trip id="bgm_69" depart="69.00" from="922334236" to="915117347#1" departLane="best" departSpeed="max" departPos="random" type="bgm__passenger"/>
+    <trip id="bgm_70" depart="70.00" from="107533638#5" to="915298554#4" departLane="best" departSpeed="max" departPos="random" type="bgm__passenger"/>
+    <trip id="bgm_71" depart="71.00" from="-922334237#2" to="1513939047" departLane="best" departSpeed="max" departPos="random" type="bgm__passenger"/>
+    <trip id="bgm_72" depart="72.00" from="1084319629#5" to="-107533638#4" departLane="best" departSpeed="max" departPos="random" type="bgm__passenger"/>
+    <trip id="bgm_73" depart="73.00" from="1512918620" to="-922334237#0" departLane="best" departSpeed="max" departPos="random" type="bgm__passenger"/>
+    <trip id="bgm_74" depart="74.00" from="1416241810#8" to="1513939046#0" departLane="best" departSpeed="max" departPos="random" type="bgm__passenger"/>
+    <trip id="bgm_75" depart="75.00" from="1416241812#1" to="1084319629#2" departLane="best" departSpeed="max" departPos="random" type="bgm__passenger"/>
+    <trip id="bgm_76" depart="76.00" from="107533638#4" to="-915117370#0" departLane="best" departSpeed="max" departPos="random" type="bgm__passenger"/>
+    <trip id="bgm_77" depart="77.00" from="1512918618#0" to="1153978412" departLane="best" departSpeed="max" departPos="random" type="bgm__passenger"/>
+    <trip id="bgm_78" depart="78.00" from="-107533638#5" to="-915298554#4" departLane="best" departSpeed="max" departPos="random" type="bgm__passenger"/>
+    <trip id="bgm_79" depart="79.00" from="1416241810#6" to="1512918617#1" departLane="best" departSpeed="max" departPos="random" type="bgm__passenger"/>
+    <trip id="bgm_80" depart="80.00" from="915298558#1" to="1416241811" departLane="best" departSpeed="max" departPos="random" type="bgm__passenger"/>
+    <trip id="bgm_81" depart="81.00" from="-784746944#4" to="1512571496#1" departLane="best" departSpeed="max" departPos="random" type="bgm__passenger"/>
+    <trip id="bgm_82" depart="82.00" from="1548790738" to="107533638#3" departLane="best" departSpeed="max" departPos="random" type="bgm__passenger"/>
+    <trip id="bgm_83" depart="83.00" from="1500153425#2" to="-107533638#1" departLane="best" departSpeed="max" departPos="random" type="bgm__passenger"/>
+    <trip id="bgm_84" depart="84.00" from="922334236" to="1347435129" departLane="best" departSpeed="max" departPos="random" type="bgm__passenger"/>
+    <trip id="bgm_85" depart="85.00" from="785016220" to="915298552#3" departLane="best" departSpeed="max" departPos="random" type="bgm__passenger"/>
+    <trip id="bgm_86" depart="86.00" from="-1548790740" to="784746961#4" departLane="best" departSpeed="max" departPos="random" type="bgm__passenger"/>
+    <trip id="bgm_87" depart="87.00" from="-1512918615" to="915117347#5" departLane="best" departSpeed="max" departPos="random" type="bgm__passenger"/>
+    <trip id="bgm_88" depart="88.00" from="915298554#4" to="784746961#1" departLane="best" departSpeed="max" departPos="random" type="bgm__passenger"/>
+    <trip id="bgm_89" depart="89.00" from="784746961#3" to="1513939040" departLane="best" departSpeed="max" departPos="random" type="bgm__passenger"/>
+    <trip id="bgm_90" depart="90.00" from="-1189785314#2" to="1084319629#6" departLane="best" departSpeed="max" departPos="random" type="bgm__passenger"/>
+    <trip id="bgm_91" depart="91.00" from="1513939046#0" to="974129255" departLane="best" departSpeed="max" departPos="random" type="bgm__passenger"/>
+    <trip id="bgm_92" depart="92.00" from="-107533638#4" to="-784746946" departLane="best" departSpeed="max" departPos="random" type="bgm__passenger"/>
+    <trip id="bgm_93" depart="93.00" from="1416241812#0" to="915298558#0" departLane="best" departSpeed="max" departPos="random" type="bgm__passenger"/>
+    <trip id="bgm_94" depart="94.00" from="107533638#3" to="915298559" departLane="best" departSpeed="max" departPos="random" type="bgm__passenger"/>
+    <trip id="bgm_95" depart="95.00" from="-1512918616#0" to="1416241810#9" departLane="best" departSpeed="max" departPos="random" type="bgm__passenger"/>
+    <trip id="bgm_96" depart="96.00" from="-1189785314#2" to="1513939046#2" departLane="best" departSpeed="max" departPos="random" type="bgm__passenger"/>
+    <trip id="bgm_97" depart="97.00" from="784746942#2" to="-1512946149" departLane="best" departSpeed="max" departPos="random" type="bgm__passenger"/>
+    <trip id="bgm_98" depart="98.00" from="-915117370#1" to="1457059970#2" departLane="best" departSpeed="max" departPos="random" type="bgm__passenger"/>
+    <trip id="bgm_99" depart="99.00" from="-107533638#2" to="1500153425#0" departLane="best" departSpeed="max" departPos="random" type="bgm__passenger"/>
+    <trip id="bgm_100" depart="100.00" from="1189785314#2" to="1190758209" departLane="best" departSpeed="max" departPos="random" type="bgm__passenger"/>
+    <trip id="bgm_101" depart="101.00" from="922334236" to="974129255" departLane="best" departSpeed="max" departPos="random" type="bgm__passenger"/>
+    <trip id="bgm_102" depart="102.00" from="-1512918617#0" to="915117347#3" departLane="best" departSpeed="max" departPos="random" type="bgm__passenger"/>
+    <trip id="bgm_103" depart="103.00" from="1192358342#2" to="915117347#2" departLane="best" departSpeed="max" departPos="random" type="bgm__passenger"/>
+    <trip id="bgm_104" depart="104.00" from="107533638#1" to="1084319629#5" departLane="best" departSpeed="max" departPos="random" type="bgm__passenger"/>
+    <trip id="bgm_105" depart="105.00" from="-1513939046#0" to="-1512943736" departLane="best" departSpeed="max" departPos="random" type="bgm__passenger"/>
+    <trip id="bgm_106" depart="106.00" from="787900401#0" to="1513939046#1" departLane="best" departSpeed="max" departPos="random" type="bgm__passenger"/>
+    <trip id="bgm_107" depart="107.00" from="107533638#3" to="1500153426" departLane="best" departSpeed="max" departPos="random" type="bgm__passenger"/>
+    <trip id="bgm_108" depart="108.00" from="915117347#6" to="-1500153423" departLane="best" departSpeed="max" departPos="random" type="bgm__passenger"/>
+    <trip id="bgm_109" depart="109.00" from="1190758210#0" to="107533638#1" departLane="best" departSpeed="max" departPos="random" type="bgm__passenger"/>
+    <trip id="bgm_110" depart="110.00" from="1513939047" to="-785016220" departLane="best" departSpeed="max" departPos="random" type="bgm__passenger"/>
+    <trip id="bgm_111" depart="111.00" from="-915298554#3" to="1416241810#8" departLane="best" departSpeed="max" departPos="random" type="bgm__passenger"/>
+    <trip id="bgm_112" depart="112.00" from="1513939044" to="785024224#1" departLane="best" departSpeed="max" departPos="random" type="bgm__passenger"/>
+    <trip id="bgm_113" depart="113.00" from="107533638#8" to="-1513939046#2" departLane="best" departSpeed="max" departPos="random" type="bgm__passenger"/>
+    <trip id="bgm_114" depart="114.00" from="1084319633" to="-1512918619" departLane="best" departSpeed="max" departPos="random" type="bgm__passenger"/>
+    <trip id="bgm_115" depart="115.00" from="1500153420#0" to="-785024225" departLane="best" departSpeed="max" departPos="random" type="bgm__passenger"/>
+    <trip id="bgm_116" depart="116.00" from="-107533638#5" to="1513939045#1" departLane="best" departSpeed="max" departPos="random" type="bgm__passenger"/>
+    <trip id="bgm_117" depart="117.00" from="915117347#6" to="785016220" departLane="best" departSpeed="max" departPos="random" type="bgm__passenger"/>
+    <trip id="bgm_118" depart="118.00" from="1416241810#5" to="-784746944#3" departLane="best" departSpeed="max" departPos="random" type="bgm__passenger"/>
+    <trip id="bgm_119" depart="119.00" from="915298552#0" to="1513939046#0" departLane="best" departSpeed="max" departPos="random" type="bgm__passenger"/>
+    <trip id="bgm_120" depart="120.00" from="-107533638#2" to="1457059971#4" departLane="best" departSpeed="max" departPos="random" type="bgm__passenger"/>
+    <trip id="bgm_121" depart="121.00" from="-784746944#1" to="107533638#7" departLane="best" departSpeed="max" departPos="random" type="bgm__passenger"/>
+    <trip id="bgm_122" depart="122.00" from="915117347#1" to="107533638#8" departLane="best" departSpeed="max" departPos="random" type="bgm__passenger"/>
+    <trip id="bgm_123" depart="123.00" from="-107533638#8" to="-784746946" departLane="best" departSpeed="max" departPos="random" type="bgm__passenger"/>
+    <trip id="bgm_124" depart="124.00" from="-1500153420#0" to="785024224#0" departLane="best" departSpeed="max" departPos="random" type="bgm__passenger"/>
+    <trip id="bgm_125" depart="125.00" from="-784746946" to="-107533638#3" departLane="best" departSpeed="max" departPos="random" type="bgm__passenger"/>
+    <trip id="bgm_126" depart="126.00" from="-785016220" to="1512571496#1" departLane="best" departSpeed="max" departPos="random" type="bgm__passenger"/>
+    <trip id="bgm_127" depart="127.00" from="-1189785314#0" to="1512946148#1" departLane="best" departSpeed="max" departPos="random" type="bgm__passenger"/>
+    <trip id="bgm_128" depart="128.00" from="1416241810#3" to="-107533638#1" departLane="best" departSpeed="max" departPos="random" type="bgm__passenger"/>
+    <trip id="bgm_129" depart="129.00" from="-1190758209" to="107533638#6" departLane="best" departSpeed="max" departPos="random" type="bgm__passenger"/>
+    <trip id="bgm_130" depart="130.00" from="-1513939046#1" to="1329296819" departLane="best" departSpeed="max" departPos="random" type="bgm__passenger"/>
+    <trip id="bgm_131" depart="131.00" from="1457059971#2" to="-1513939046#0" departLane="best" departSpeed="max" departPos="random" type="bgm__passenger"/>
+    <trip id="bgm_132" depart="132.00" from="-915298552#3" to="1457059972" departLane="best" departSpeed="max" departPos="random" type="bgm__passenger"/>
+    <trip id="bgm_133" depart="133.00" from="1416241810#8" to="-1500153420#0" departLane="best" departSpeed="max" departPos="random" type="bgm__passenger"/>
+    <trip id="bgm_134" depart="134.00" from="-784746973" to="1189785315" departLane="best" departSpeed="max" departPos="random" type="bgm__passenger"/>
+    <trip id="bgm_135" depart="135.00" from="-1512918620" to="1513939047" departLane="best" departSpeed="max" departPos="random" type="bgm__passenger"/>
+    <trip id="bgm_136" depart="136.00" from="915117347#6" to="1512918618#0" departLane="best" departSpeed="max" departPos="random" type="bgm__passenger"/>
+    <trip id="bgm_137" depart="137.00" from="-915298558#0" to="1079919822" departLane="best" departSpeed="max" departPos="random" type="bgm__passenger"/>
+    <trip id="bgm_138" depart="138.00" from="-107533638#5" to="784746961#0" departLane="best" departSpeed="max" departPos="random" type="bgm__passenger"/>
+    <trip id="bgm_139" depart="139.00" from="784746962#0" to="1153978412" departLane="best" departSpeed="max" departPos="random" type="bgm__passenger"/>
+</routes>

@@ -1,165 +1,88 @@
+"""Traffic-aware edge travel-time cost for SUMO."""
+
+import math
 import traci
 
-
-# ============================================================
-# TRAFFIC COST SETTINGS
-# ============================================================
-
-# Additional cost added for every vehicle on the road.
-#
-# Example:
-#   0 vehicles -> 0 penalty
-#   3 vehicles -> 6 penalty
-#   5 vehicles -> 10 penalty
-#
-# We keep this separate so it can easily be tuned later.
-TRAFFIC_PENALTY_PER_VEHICLE = 2.0
+DEFAULT_SPEED_LIMIT = 13.89
+MIN_SPEED_MPS = 0.5
+MIN_SPEED_FRACTION = 0.10
 
 
-# ============================================================
-# TRAFFIC-AWARE EDGE COST
-# ============================================================
+def _positive_float(value, fallback):
+    try:
+        value = float(value)
+    except (TypeError, ValueError):
+        return float(fallback)
 
-def get_traffic_cost(edge_id):
-    """
-    Calculate the traffic-aware cost of travelling through
-    one SUMO road.
+    if not math.isfinite(value) or value <= 0:
+        return float(fallback)
 
-    Final cost:
-
-        travel time + congestion penalty
-
-    Lower cost = better road
-    Higher cost = more congested/expensive road
-    """
-
-    # ========================================================
-    # GET CURRENT TRAFFIC
-    # ========================================================
-
-    # Number of vehicles currently on this edge
-    vehicle_count = (
-        traci.edge.getLastStepVehicleNumber(
-            edge_id
-        )
-    )
-
-    # Average speed of vehicles currently on this edge
-    average_speed = (
-        traci.edge.getLastStepMeanSpeed(
-            edge_id
-        )
-    )
+    return value
 
 
-    # ========================================================
-    # GET ROAD LENGTH
-    # ========================================================
+def get_traffic_info(edge_id, road_length=None, speed_limit=None):
+    """Return traffic and travel-time information for a SUMO edge."""
 
-    # Your network currently has one lane per edge.
-    # Therefore lane 0 represents the road.
     lane_id = f"{edge_id}_0"
 
-    road_length = (
-        traci.lane.getLength(
-            lane_id
+    if road_length is None:
+        try:
+            road_length = traci.lane.getLength(lane_id)
+        except Exception:
+            road_length = 1.0
+
+    road_length = _positive_float(road_length, 1.0)
+
+    if speed_limit is None:
+        try:
+            speed_limit = traci.lane.getMaxSpeed(lane_id)
+        except Exception:
+            speed_limit = DEFAULT_SPEED_LIMIT
+
+    speed_limit = _positive_float(speed_limit, DEFAULT_SPEED_LIMIT)
+
+    vehicle_count = int(traci.edge.getLastStepVehicleNumber(edge_id))
+    mean_speed = float(traci.edge.getLastStepMeanSpeed(edge_id))
+
+    if vehicle_count <= 0:
+        effective_speed = speed_limit
+    elif not math.isfinite(mean_speed) or mean_speed <= 0:
+        effective_speed = max(
+            MIN_SPEED_MPS,
+            speed_limit * MIN_SPEED_FRACTION
         )
-    )
-
-
-    # ========================================================
-    # PROTECT AGAINST ZERO SPEED
-    # ========================================================
-
-    # If vehicles are stopped, SUMO can report a speed of 0.
-    #
-    # We use a small value to avoid division by zero.
-    if average_speed <= 0:
-
-        average_speed = 0.1
-
-
-    # ========================================================
-    # ESTIMATED TRAVEL TIME
-    # ========================================================
-
-    # Basic equation:
-    #
-    #       travel time = distance / speed
-    #
-    travel_time = (
-        road_length / average_speed
-    )
-
-
-    # ========================================================
-    # CONGESTION PENALTY
-    # ========================================================
-
-    # More vehicles -> higher cost
-    traffic_penalty = (
-        vehicle_count
-        * TRAFFIC_PENALTY_PER_VEHICLE
-    )
-
-
-    # ========================================================
-    # FINAL COST
-    # ========================================================
-
-    total_cost = (
-        travel_time
-        + traffic_penalty
-    )
-
-
-    return total_cost
-
-
-# ============================================================
-# TRAFFIC INFORMATION
-# ============================================================
-
-def get_traffic_info(edge_id):
-    """
-    Return detailed traffic information for one road.
-
-    Useful for debugging, logging, and later visualization.
-    """
-
-    # Number of vehicles
-    vehicle_count = (
-        traci.edge.getLastStepVehicleNumber(
-            edge_id
+    else:
+        effective_speed = min(
+            speed_limit,
+            max(MIN_SPEED_MPS, mean_speed)
         )
-    )
 
-
-    # Average speed
-    average_speed = (
-        traci.edge.getLastStepMeanSpeed(
-            edge_id
-        )
-    )
-
-
-    # Road length
-    road_length = (
-        traci.lane.getLength(
-            f"{edge_id}_0"
-        )
-    )
-
-
-    # Calculate final traffic-aware cost
-    cost = get_traffic_cost(
-        edge_id
-    )
-
+    free_flow_time = road_length / speed_limit
+    estimated_travel_time = road_length / effective_speed
 
     return {
-        "vehicles": vehicle_count,
-        "average_speed": average_speed,
-        "length": road_length,
-        "cost": cost
+        "edge_id": edge_id,
+        "vehicle_count": vehicle_count,
+        "road_length_m": road_length,
+        "speed_limit_mps": speed_limit,
+        "mean_speed_mps": mean_speed,
+        "effective_speed_mps": effective_speed,
+        "free_flow_time_s": free_flow_time,
+        "estimated_travel_time_s": estimated_travel_time,
+        "congestion_delay_s": max(
+            0.0,
+            estimated_travel_time - free_flow_time
+        )
     }
+
+
+def get_traffic_cost(edge_id, road_length=None, speed_limit=None):
+    """Return estimated edge travel time in seconds."""
+
+    info = get_traffic_info(
+        edge_id,
+        road_length=road_length,
+        speed_limit=speed_limit
+    )
+
+    return float(info["estimated_travel_time_s"])

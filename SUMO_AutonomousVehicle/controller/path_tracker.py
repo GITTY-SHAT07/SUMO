@@ -360,12 +360,12 @@ def find_lookahead_point(
         remaining_current_segment
     ):
 
-        if current_segment_length > 0:
+        if current_segment_length > 1e-9:
 
             ratio = (
                 remaining_distance
                 /
-                current_segment_length
+                remaining_current_segment
             )
 
         else:

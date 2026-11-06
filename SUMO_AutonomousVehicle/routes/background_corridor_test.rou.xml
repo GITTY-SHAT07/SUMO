@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<routes>
+
+    <vType
+        id="corridorStressCar"
+        vClass="passenger"
+        accel="1.8"
+        decel="3.5"
+        sigma="0.2"
+        length="5.0"
+        minGap="2.5"
+        maxSpeed="7.0"
+        speedFactor="1.0"
+        speedDev="0.15"
+    />
+
+    <route
+        id="mainCorridor"
+        edges="1084319629#2 1084319629#3 1084319629#4 1084319629#5 1084319629#6"
+    />
+
+    <flow
+        id="corridor_flow"
+        type="corridorStressCar"
+        route="mainCorridor"
+        begin="0"
+        end="240"
+        period="1.5"
+        departLane="best"
+        departSpeed="max"
+        departPos="free"
+    />
+
+</routes>

@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+venv/
+.env
+
+# macOS / editor
+.DS_Store
+.vscode/.ropeproject/
+
+# Generated run artefacts
+results/runs/
+logs/
+*.log
+*.tmp
+
+# SUMO transient outputs
+*.tripinfo.xml
+*.summary.xml
+*.vehroute.xml
+*.netstate.xml
